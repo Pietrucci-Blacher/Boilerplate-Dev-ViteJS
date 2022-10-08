@@ -20,7 +20,13 @@ docker-compose exec node npm install
 ### Development Server Startup
 
 ```bash
-docker-compose exec node npm start
+docker-compose exec node run npm start
+```
+
+### Production Build Startup
+
+```bash
+docker-compose exec node run npm build
 ```
 
 ### Docker Compose Services Shutdown
