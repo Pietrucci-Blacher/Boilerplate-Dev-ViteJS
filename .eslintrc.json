@@ -1,0 +1,25 @@
+{
+    "env": {
+        "browser": false,
+        "commonjs": true,
+        "es6": true,
+        "node": true,
+        "mocha": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "prettier"
+    ],
+    "globals": { },
+    "parserOptions": {
+        "ecmaVersion": 2018
+    },
+    "rules": {
+        "indent": [ "error", 4 ],
+        "linebreak-style": "off",
+        "quotes": [ "warn", "single" ],
+        "semi": [ "error", "never" ],
+        "no-console": "off",
+        "space-before-blocks": "error"
+    }
+}
