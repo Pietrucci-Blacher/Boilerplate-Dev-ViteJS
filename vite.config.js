@@ -3,11 +3,13 @@ import { resolve } from "path"
 
 export default defineConfig({
     root: resolve("sources"),
-    css: {
-        preprocessorOptions: {
-            scss: {
-                additionalData: `@import "variables.scss";`
-
+    vite: {
+        css:
+        {
+            preprocessorOptions: {
+                scss: {
+                    additionalData: `@import "src/styles/main.scss";`
+                }
             }
         }
     },
