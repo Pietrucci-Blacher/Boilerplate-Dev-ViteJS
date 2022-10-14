@@ -13,18 +13,23 @@
     "stylelint-z-index-value-constraint",
     "stylelint-css-modules",
     "stylelint-css-modules-no-global-scoped-selector",
-    "stylelint-use-logical-spec",
     "stylelint-declaration-block-no-ignored-properties",
     "stylelint-declaration-strict-value",
     "stylelint-group-selectors",
     "stylelint-selector-no-empty",
-    "stylelint-selector-tag-no-without-class"
+    "stylelint-scss"
   ],
   "defaultSeverity": "error",
   "rules": {
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true,
     "selector-class-pattern": null,
     "selector-id-pattern": null,
-    "csstree/validator": true,
+    "csstree/validator": {
+      "syntaxExtensions": [
+        "sass"
+      ]
+    },
     "pitcher/no-nested-media": true,
     "csstools/value-no-unknown-custom-properties": true,
     "plugin/z-index-value-constraint": {
@@ -32,14 +37,16 @@
       "max": 200
     },
     "css-modules/composed-class-names": true,
-    "css-modules/css-variables": true,
+    "css-modules/css-variables": [true, {
+      "resolve": {
+        "extensions": [".css", ".scss"]
+      }
+    }],
     "css-modules/no-global-scoped-selector": true,
-    "liberty/use-logical-spec" : "always",
     "plugin/declaration-block-no-ignored-properties": true,
     "scale-unlimited/declaration-strict-value": "color",
     "@isnotdefined/no-obsolete": true,
     "@isnotdefined/unit-step": true,
-    "plugin/stylelint-selector-no-empty": true,
-    "plugin/selector-tag-no-without-class": ["div", "span", "section"]
+    "plugin/stylelint-selector-no-empty": true
   }
 }
