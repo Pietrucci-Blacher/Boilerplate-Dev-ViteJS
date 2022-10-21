@@ -24,7 +24,7 @@
     "stylelint-css-modules": "1.2.2",
     "stylelint-css-modules-no-global-scoped-selector": "1.0.2",
     "stylelint-csstree-validator": "2.0.0",
-    "stylelint-declaration-block-no-ignored-properties": "2.5.0",
+    "stylelint-declaration-block-no-ignored-properties": "2.6.0",
     "stylelint-declaration-strict-value": "1.9.1",
     "stylelint-group-selectors": "1.0.9",
     "stylelint-no-nested-media": "0.1.0",
