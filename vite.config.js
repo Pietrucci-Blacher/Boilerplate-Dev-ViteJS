@@ -10,11 +10,13 @@ const outputDefaults = {
 
 export default defineConfig({
     root: resolve("sources"),
+    base: "./",
     server: {
         port: 8000,
-        host: "0.0.0.0"
+        host: "0.0.0.0",
     },
     build: {
+        manifest: true,
         rollupOptions: {
             output: {
                 ...outputDefaults,
