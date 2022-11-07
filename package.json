@@ -32,6 +32,6 @@
     "stylelint-selector-no-empty": "1.0.9",
     "stylelint-value-no-unknown-custom-properties": "4.0.0",
     "stylelint-z-index-value-constraint": "1.2.0",
-    "vite": "3.2.2"
+    "vite": "3.2.3"
   }
 }
