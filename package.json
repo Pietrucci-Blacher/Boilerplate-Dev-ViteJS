@@ -19,7 +19,7 @@
     "prettier": "2.7.1",
     "sass": "^1.55.0",
     "stylelint": "14.14.1",
-    "stylelint-config-prettier": "9.0.3",
+    "stylelint-config-prettier": "9.0.4",
     "stylelint-config-recommended": "9.0.0",
     "stylelint-css-modules": "1.2.2",
     "stylelint-css-modules-no-global-scoped-selector": "1.0.2",
