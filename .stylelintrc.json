@@ -3,7 +3,10 @@
     "stylelint-config-standard",
     "stylelint-config-prettier",
     "stylelint-config-recommended",
-    "stylelint-declaration-strict-value"
+    "stylelint-declaration-strict-value",
+    "stylelint-config-recommended-scss",
+    "stylelint-config-standard-scss",
+    "stylelint-config-prettier-scss"
   ],
   "plugins": [
     "@isnotdefined/stylelint-plugin",
