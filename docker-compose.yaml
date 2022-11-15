@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   node:
-    image: node:19-alpine
+    image: node:19.1-alpine
     user: node
     working_dir: /home/node
     tty: true
