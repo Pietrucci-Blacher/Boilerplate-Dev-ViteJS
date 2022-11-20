@@ -4,6 +4,7 @@
         "commonjs": true,
         "es2022": true,
         "node": true,
+        "module": true,
         "worker": true,
         "mocha": true
     },
