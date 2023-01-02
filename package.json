@@ -11,7 +11,7 @@
     "test": "mocha"
   },
   "devDependencies": {
-    "@isnotdefined/stylelint-plugin": "1.3.3",
+    "@isnotdefined/stylelint-plugin": "1.4.0",
     "eslint": "8.31.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.2.1",
