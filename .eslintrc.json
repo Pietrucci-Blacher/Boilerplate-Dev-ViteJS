@@ -1,24 +1,30 @@
 {
     "env": {
-        "browser": false,
-        "commonjs": true,
-        "es2022": true,
-        "node": true,
-        "module": true,
-        "worker": true,
-        "mocha": true
+        "browser": true,
+        "es2021": true
     },
-    "extends": ["eslint:recommended", "prettier"],
-    "globals": {},
+    "extends": "eslint:recommended",
+    "overrides": [
+    ],
     "parserOptions": {
-        "ecmaVersion": 2022
+        "ecmaVersion": "latest"
     },
     "rules": {
-        "indent": ["error", "tab"],
-        "linebreak-style": "off",
-        "quotes": ["warn", "single"],
-        "semi": ["error", "always"],
-        "no-console": "off",
-        "space-before-blocks": "error"
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
     }
 }

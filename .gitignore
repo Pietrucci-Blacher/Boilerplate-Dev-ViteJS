@@ -3,6 +3,7 @@
 
 #Node
 package-lock.json
+pnpm-lock.yaml
 .node_repl_history
 .ash_history
 node_modules/*
