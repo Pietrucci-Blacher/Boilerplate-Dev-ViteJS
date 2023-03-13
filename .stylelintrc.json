@@ -1,0 +1,39 @@
+{
+  "extends" : [
+    "stylelint-config-standard-scss",
+    "stylelint-config-prettier-scss"
+  ],
+  "plugins": [
+    "stylelint-value-no-exposed-custom-properties",
+    "style-use-nesting",
+    "stylelint-selector-tag-no-without-class",
+    "stylelint-scss",
+    "stylelint-selector-no-empty",
+    "stylelint-rem-over-px",
+    "@isnotdefined/stylelint-plugin",
+    "stylelint-group-selectors",
+    "stylelint-declaration-strict-value",
+    "stylelint-declaration-block-no-ignored-properties"
+  ],
+  "defaultSeverity": "error",
+  "rules": {
+    "declaration-property-value-no-unknown": true,
+    "at-rule-empty-line-before" : null,
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true,
+    "plugin/value-no-exposed-custom-properties": true,
+    "csstools/use-nesting": [
+      "always",
+      {
+        "syntax": "scss"
+      }
+    ],
+    "plugin/stylelint-selector-no-empty": true,
+    "plugin/selector-tag-no-without-class": ["div", "span"],
+    "rem-over-px/rem-over-px": true,
+    "@isnotdefined/no-obsolete": true,
+    "plugin/stylelint-group-selectors": true,
+    "scale-unlimited/declaration-strict-value": "color",
+    "plugin/declaration-block-no-ignored-properties": true
+  }
+}
