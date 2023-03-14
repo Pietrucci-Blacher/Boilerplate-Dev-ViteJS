@@ -11,8 +11,11 @@
     "test": "vitest"
   },
   "devDependencies": {
+    "@html-eslint/eslint-plugin": "^0.17.1",
+    "@html-eslint/parser": "^0.17.1",
     "@isnotdefined/stylelint-plugin": "^3.0.0",
     "eslint": "^8.36.0",
+    "eslint-plugin-unicorn": "^46.0.0",
     "postcss": "^8.4.21",
     "postcss-scss": "^4.0.6",
     "prettier": "2.8.4",
@@ -24,7 +27,7 @@
     "stylelint-declaration-strict-value": "^1.9.2",
     "stylelint-group-selectors": "^1.0.9",
     "stylelint-rem-over-px": "^1.0.0",
-    "stylelint-scss": "^4.4.0",
+    "stylelint-scss": "^4.5.0",
     "stylelint-selector-no-empty": "^1.0.9",
     "stylelint-selector-tag-no-without-class": "^2.0.5",
     "stylelint-use-nesting": "^4.1.0",

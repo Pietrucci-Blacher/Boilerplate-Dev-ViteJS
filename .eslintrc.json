@@ -3,8 +3,16 @@
         "browser": true,
         "es2022": true
     },
-    "extends": "eslint:recommended",
+    "extends": [
+        "eslint:recommended",
+        "plugin:unicorn/recommended"
+    ],
     "overrides": [
+        {
+            "files": ["*.html"],
+            "parser": "@html-eslint/parser",
+            "extends": ["plugin:@html-eslint/recommended"]
+        }
     ],
     "parserOptions": {
         "ecmaVersion": "latest"
@@ -25,6 +33,42 @@
         "semi": [
             "error",
             "always"
-        ]
+        ],
+        "func-style": [
+            "error",
+            "expression"
+        ],
+        "no-extra-semi": "error",
+        "default-case": "error",
+        "camelcase": 0,
+        "no-async-promise-executor": "error",
+        "no-await-in-loop": "error",
+        "no-console": "warn",
+        "no-misleading-character-class": "error",
+        "no-multi-assign": "error",
+        "no-multi-str": "error",
+        "no-nested-ternary": "error",
+        "no-new": "error",
+        "no-new-object": "error",
+        "no-new-symbol": "error",
+        "no-new-wrappers": "error",
+        "no-obj-calls": "error",
+        "no-path-concat": "error",
+        "no-return-await": "error",
+        "no-script-url": "error",
+        "no-self-compare": "error",
+        "no-sequences": "error",
+        "no-shadow-restricted-names": "error",
+        "no-sparse-arrays": "error",
+        "no-tabs": "error",
+        "no-template-curly-in-string": "error",
+        "no-this-before-super": "error",
+        "prefer-numeric-literals": "error",
+        "prefer-object-spread": "error",
+        "prefer-rest-params": "error",
+        "prefer-spread": "error",
+        "prefer-template": "error",
+        "symbol-description": "error",
+        "no-unreachable-loop": "error"
     }
 }
