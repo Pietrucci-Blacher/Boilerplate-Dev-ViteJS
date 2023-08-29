@@ -18,7 +18,7 @@
     "eslint-plugin-unicorn": "^48.0.0",
     "postcss": "^8.4.21",
     "postcss-scss": "^4.0.6",
-    "prettier": "3.0.2",
+    "prettier": "3.0.3",
     "sass": "^1.59.3",
     "stylelint": "^15.2.0",
     "stylelint-config-prettier-scss": "^1.0.0",
