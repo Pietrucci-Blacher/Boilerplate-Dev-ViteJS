@@ -1,10 +1,11 @@
 {
     "env": {
         "browser": true,
-        "es2022": true
+        "es2023": true
     },
     "extends": [
         "eslint:recommended",
+        "eslint-config-async",
         "plugin:unicorn/recommended"
     ],
     "overrides": [
@@ -54,6 +55,7 @@
         "no-new-wrappers": "error",
         "no-obj-calls": "error",
         "no-path-concat": "error",
+        "no-promise-executor-return": "error",
         "no-return-await": "error",
         "no-script-url": "error",
         "no-self-compare": "error",
@@ -65,9 +67,11 @@
         "no-this-before-super": "error",
         "prefer-numeric-literals": "error",
         "prefer-object-spread": "error",
+        "prefer-promise-reject-errors": "error",
         "prefer-rest-params": "error",
         "prefer-spread": "error",
         "prefer-template": "error",
+        "require-atomic-updates": "error",
         "symbol-description": "error",
         "no-unreachable-loop": "error"
     }
