@@ -30,7 +30,7 @@
     "stylelint-rem-over-px": "^1.0.0",
     "stylelint-scss": "^6.0.0",
     "stylelint-selector-no-empty": "^1.0.9",
-    "stylelint-selector-tag-no-without-class": "^2.0.5",
+    "stylelint-selector-tag-no-without-class": "^3.0.0",
     "stylelint-use-nesting": "^4.1.0",
     "stylelint-value-no-exposed-custom-properties": "^2.3.1",
     "vite": "5.1.1",
