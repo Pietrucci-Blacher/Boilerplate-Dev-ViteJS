@@ -13,7 +13,7 @@
   "devDependencies": {
     "@html-eslint/eslint-plugin": "^0.23.0",
     "@html-eslint/parser": "^0.23.0",
-    "@isnotdefined/stylelint-plugin": "^4.0.0",
+    "@isnotdefined/stylelint-plugin": "^5.0.0",
     "eslint": "^8.36.0",
     "eslint-config-async" : "^2.0.2",
     "eslint-plugin-unicorn": "^51.0.0",
