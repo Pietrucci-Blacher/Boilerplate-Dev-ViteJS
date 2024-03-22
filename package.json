@@ -33,7 +33,7 @@
     "stylelint-selector-tag-no-without-class": "^3.0.0",
     "stylelint-use-nesting": "^5.0.0",
     "stylelint-value-no-exposed-custom-properties": "^2.3.1",
-    "vite": "5.2.2",
+    "vite": "5.2.3",
     "vitest": "^1.0.0"
   }
 }
