@@ -14,7 +14,7 @@
     "@html-eslint/eslint-plugin": "^0.24.0",
     "@html-eslint/parser": "^0.24.0",
     "@isnotdefined/stylelint-plugin": "^5.0.0",
-    "eslint": "^8.36.0",
+    "eslint": "^9.0.0",
     "eslint-config-async" : "^2.0.2",
     "eslint-plugin-unicorn": "^52.0.0",
     "postcss": "^8.4.21",
