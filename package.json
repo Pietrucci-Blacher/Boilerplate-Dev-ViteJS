@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@html-eslint/eslint-plugin": "^0.24.0",
-    "@html-eslint/parser": "^0.24.0",
+    "@html-eslint/parser": "^0.25.0",
     "@isnotdefined/stylelint-plugin": "^5.0.0",
     "eslint": "^9.0.0",
     "eslint-config-async" : "^2.0.2",
