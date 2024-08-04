@@ -1,13 +1,9 @@
 {
-  "extends" : [
-    "stylelint-config-standard-scss",
-    "stylelint-config-prettier-scss"
-  ],
+  "extends" : ["stylelint-config-standard"],
   "plugins": [
     "stylelint-value-no-exposed-custom-properties",
-    "style-use-nesting",
+    "stylelint-use-nesting",
     "stylelint-selector-tag-no-without-class",
-    "stylelint-scss",
     "stylelint-selector-no-empty",
     "stylelint-rem-over-px",
     "@isnotdefined/stylelint-plugin",
@@ -22,12 +18,7 @@
     "at-rule-no-unknown": null,
     "scss/at-rule-no-unknown": true,
     "plugin/value-no-exposed-custom-properties": true,
-    "csstools/use-nesting": [
-      "always",
-      {
-        "syntax": "scss"
-      }
-    ],
+    "csstools/use-nesting": "always",
     "plugin/stylelint-selector-no-empty": true,
     "plugin/selector-tag-no-without-class": ["div", "span"],
     "rem-over-px/rem-over-px": true,

@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint:style": "pnpx stylelint \"**/*.{css}\"",
+    "lint:style": "pnpx stylelint \"./sources/src/**/*.css\"",
     "preview": "vite preview",
     "test": "vitest"
   },
@@ -21,6 +21,7 @@
     "eslint-plugin-unicorn": "^55.0.0",
     "prettier": "3.3.3",
     "stylelint": "16.8.1",
+    "stylelint-config-standard": "^36.0.1",
     "stylelint-declaration-block-no-ignored-properties": "^2.8.0",
     "stylelint-declaration-strict-value": "^1.10.6",
     "stylelint-group-selectors": "^1.0.10",
