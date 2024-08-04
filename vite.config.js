@@ -11,8 +11,5 @@ export default defineConfig({
     preview: {
         port: 8001,
         host: "0.0.0.0"
-    },
-    scss: {
-        watch: "sources/src/scss/main.scss",
     }
 })
