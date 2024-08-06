@@ -18,8 +18,8 @@ importers:
         specifier: ^0.25.0
         version: 0.25.0
       '@html-eslint/parser':
-        specifier: ^0.25.0
-        version: 0.25.0
+        specifier: ^0.26.0
+        version: 0.26.0
       '@isnotdefined/stylelint-plugin':
         specifier: ^5.0.0
         version: 5.0.0(stylelint@16.8.1(typescript@5.5.4))
@@ -302,8 +302,8 @@ packages:
     resolution: {integrity: sha512-5DlvqO8bbe90cKSfFDuEblyrEnhAdgNTjWxXeUxt/XXC2OuMC8CsxzLZjtK3+0X6yM8m4xcE3fymCPwg7zdcXQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
-  '@html-eslint/parser@0.25.0':
-    resolution: {integrity: sha512-dj6U1klMorS/g1QFI6j15AXknsqMDtdingSF6Sdtm1Z7WOVISfDwVyeNbb+JLUG+ATo9aECPQP5A7MHqgP6J9A==}
+  '@html-eslint/parser@0.26.0':
+    resolution: {integrity: sha512-o82iUf7HLV6W48voPByAVTPALlWyF4PR9/2YOUlyXY9Ff7bbu9IdxU9Oc5t82Jwx4kOH5gJiZi3cee+CFB9OBQ==}
     engines: {node: '>=8.10.0'}
 
   '@humanwhocodes/module-importer@1.0.1':
@@ -2238,7 +2238,7 @@ snapshots:
 
   '@html-eslint/eslint-plugin@0.25.0': {}
 
-  '@html-eslint/parser@0.25.0':
+  '@html-eslint/parser@0.26.0':
     dependencies:
       es-html-parser: 0.0.9
 
