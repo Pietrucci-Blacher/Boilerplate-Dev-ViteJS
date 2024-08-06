@@ -15,8 +15,8 @@ importers:
         specifier: ^9.8.0
         version: 9.8.0
       '@html-eslint/eslint-plugin':
-        specifier: ^0.25.0
-        version: 0.25.0
+        specifier: ^0.26.0
+        version: 0.26.0
       '@html-eslint/parser':
         specifier: ^0.26.0
         version: 0.26.0
@@ -298,8 +298,8 @@ packages:
     resolution: {integrity: sha512-BsWiH1yFGjXXS2yvrf5LyuoSIIbPrGUWob917o+BTKuZ7qJdxX8aJLRxs1fS9n6r7vESrq1OUqb68dANcFXuQQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@html-eslint/eslint-plugin@0.25.0':
-    resolution: {integrity: sha512-5DlvqO8bbe90cKSfFDuEblyrEnhAdgNTjWxXeUxt/XXC2OuMC8CsxzLZjtK3+0X6yM8m4xcE3fymCPwg7zdcXQ==}
+  '@html-eslint/eslint-plugin@0.26.0':
+    resolution: {integrity: sha512-ovmAYVN/Wv+OX77FrSSyPxBokOg6hvxuiTRXhbN1rnZ7DwCmHjnvVyDlkTeWQHmuwFF2n8yLu2B/X9AMA9KxNw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
   '@html-eslint/parser@0.26.0':
@@ -2236,7 +2236,7 @@ snapshots:
 
   '@eslint/object-schema@2.1.4': {}
 
-  '@html-eslint/eslint-plugin@0.25.0': {}
+  '@html-eslint/eslint-plugin@0.26.0': {}
 
   '@html-eslint/parser@0.26.0':
     dependencies:
