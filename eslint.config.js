@@ -3,9 +3,6 @@ import globals from 'globals';
 import eslintPluginImport from 'eslint-plugin-import';
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 import eslintPluginPromise from 'eslint-plugin-promise';
-import eslintPluginSonarjs from 'eslint-plugin-sonarjs';
-import eslintPluginJsxA11y from 'eslint-plugin-jsx-a11y';
-import eslintPluginSecurity from 'eslint-plugin-security';
 import htmlEslintParser from '@html-eslint/parser';
 import htmlEslintPlugin from '@html-eslint/eslint-plugin';
 
@@ -13,7 +10,7 @@ export default [
   js.configs.recommended,
   {
     languageOptions: {
-      ecmaVersion: 2023,
+      ecmaVersion: 2024,
       sourceType: 'module',
       globals: {
         ...globals.browser,
@@ -25,62 +22,91 @@ export default [
       import: eslintPluginImport,
       unicorn: eslintPluginUnicorn,
       promise: eslintPluginPromise,
-      sonarjs: eslintPluginSonarjs,
-      'jsx-a11y': eslintPluginJsxA11y,
-      security: eslintPluginSecurity,
     },
     rules: {
       ...eslintPluginImport.configs.recommended.rules,
       ...eslintPluginUnicorn.configs.recommended.rules,
       ...eslintPluginPromise.configs.recommended.rules,
-      ...eslintPluginSonarjs.configs.recommended.rules,
-      ...eslintPluginJsxA11y.configs.recommended.rules,
-      ...eslintPluginSecurity.configs.recommended.rules,
 
-      'indent': ['error', 2],
-      'quotes': ['error', 'single'],
+      // Style et formatage pour une meilleure lisibilité
+      'indent': ['error', 2, { 'SwitchCase': 1 }],
+      'quotes': ['error', 'single', { 'avoidEscape': true, 'allowTemplateLiterals': true }],
       'semi': ['error', 'always'],
-      'func-style': ['error', 'expression'],
-      'camelcase': 'off',
-      'no-extra-semi': 'error',
-      'default-case': 'error',
-      'no-async-promise-executor': 'error',
-      'no-await-in-loop': 'error',
-      'no-console': 'warn',
-      'no-misleading-character-class': 'error',
-      'no-multi-assign': 'error',
-      'no-multi-str': 'error',
-      'no-nested-ternary': 'error',
-      'no-new': 'error',
-      'no-new-object': 'error',
-      'no-new-symbol': 'error',
-      'no-new-wrappers': 'error',
-      'no-obj-calls': 'error',
-      'no-path-concat': 'error',
-      'no-promise-executor-return': 'error',
-      'no-return-await': 'error',
-      'no-script-url': 'error',
-      'no-self-compare': 'error',
-      'no-sequences': 'error',
-      'no-shadow-restricted-names': 'error',
-      'no-sparse-arrays': 'error',
-      'no-template-curly-in-string': 'error',
-      'no-this-before-super': 'error',
-      'prefer-numeric-literals': 'error',
-      'prefer-object-spread': 'error',
-      'prefer-promise-reject-errors': 'error',
+      'no-multiple-empty-lines': ['error', { 'max': 1, 'maxEOF': 0 }],
+      'object-curly-spacing': ['error', 'always'],
+      'array-bracket-spacing': ['error', 'never'],
+      'comma-dangle': ['error', 'always-multiline'],
+      'arrow-parens': ['error', 'as-needed'],
+
+      // ES6+ et fonctionnalités modernes
+      'prefer-const': 'error',
+      'prefer-destructuring': ['error', { 'object': true, 'array': false }],
+      'prefer-template': 'error',
       'prefer-rest-params': 'error',
       'prefer-spread': 'error',
-      'prefer-template': 'error',
-      'require-atomic-updates': 'error',
-      'symbol-description': 'error',
-      'no-unreachable-loop': 'error',
+      'no-var': 'error',
+      'object-shorthand': 'error',
+      'arrow-body-style': ['error', 'as-needed'],
+
+      // Meilleures pratiques pour la performance et la lisibilité
+      'no-eval': 'error',
+      'no-implied-eval': 'error',
+      'no-param-reassign': 'error',
+      'no-return-await': 'error',
+      'require-await': 'error',
+      'no-unused-expressions': 'error',
+      'no-unused-vars': ['error', { 'argsIgnorePattern': '^_', 'varsIgnorePattern': '^_' }],
+      'no-use-before-define': ['error', { 'functions': false, 'classes': true, 'variables': true }],
+
+      // Performance
+      'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
+      'no-alert': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
+      'prefer-object-spread': 'error',
+      'no-iterator': 'error',
+      'no-restricted-syntax': [
+        'error',
+        'ForInStatement',
+        'LabeledStatement',
+        'WithStatement',
+      ],
+
+      // Unicorn (pratiques modernes et performances)
       'unicorn/prefer-module': 'error',
-      'import/no-unresolved': 'error',
-      'import/named': 'error',
-      'import/default': 'error',
-      'import/namespace': 'error',
+      'unicorn/prefer-node-protocol': 'error',
+      'unicorn/prefer-ternary': 'error',
+      'unicorn/prefer-set-has': 'error',
+      'unicorn/prefer-array-find': 'error',
+      'unicorn/prefer-includes': 'error',
+      'unicorn/prefer-string-slice': 'error',
+      'unicorn/prefer-date-now': 'error',
+      'unicorn/no-for-loop': 'error',
+      'unicorn/no-array-for-each': 'error',
+      'unicorn/no-array-reduce': 'warn',
+
+      // Import (organisation et performance)
+      'import/order': [
+        'error',
+        {
+          'groups': ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
+          'newlines-between': 'always',
+          'alphabetize': { 'order': 'asc', 'caseInsensitive': true }
+        }
+      ],
+      'import/no-cycle': 'error',
       'import/no-duplicates': 'error',
+      'import/no-useless-path-segments': 'error',
+
+      // Promise (gestion asynchrone efficace)
+      'promise/prefer-await-to-then': 'error',
+      'promise/prefer-await-to-callbacks': 'error',
+      'promise/no-return-wrap': 'error',
+      'promise/no-nesting': 'warn',
+
+      // Complexité et maintenabilité
+      'complexity': ['warn', 12],
+      'max-depth': ['warn', 3],
+      'max-lines-per-function': ['warn', { 'max': 50, 'skipBlankLines': true, 'skipComments': true }],
+      'max-params': ['warn', 3],
     },
   },
   {
