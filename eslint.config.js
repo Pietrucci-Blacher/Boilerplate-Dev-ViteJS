@@ -62,8 +62,6 @@ export default [
       'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
       'no-alert': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
       'prefer-object-spread': 'error',
-      'prefer-rest-params': 'error',
-      'prefer-spread': 'error',
       'no-iterator': 'error',
       'no-restricted-syntax': [
         'error',
