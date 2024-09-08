@@ -8,24 +8,21 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "pnpx eslint --fix \"./sources/**/*.{js,jsx,ts,tsx}\"",
+    "lint": "pnpx eslint \"./sources/**/*.js\"",
     "lint:style": "pnpx stylelint \"./sources/src/**/*.css\"",
     "preview": "vite preview",
     "test": "vitest"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.8.0",
     "@html-eslint/eslint-plugin": "^0.26.0",
     "@html-eslint/parser": "^0.26.0",
     "@isnotdefined/stylelint-plugin": "^5.0.0",
-    "eslint": "9.9.1",
-    "eslint-config-async": "^2.0.2",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jsx-a11y": "^6.9.0",
-    "eslint-plugin-promise": "^7.0.0",
+    "eslint": "9.10.0",
+    "eslint-config-async": "^3.0.0",
+    "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-promise": "^7.1.0",
     "eslint-plugin-security": "^3.0.1",
-    "eslint-plugin-sonarjs": "^1.0.4",
     "eslint-plugin-unicorn": "^55.0.0",
     "globals": "^15.9.0",
     "prettier": "3.3.3",
@@ -39,7 +36,7 @@
     "stylelint-selector-tag-no-without-class": "^3.0.1",
     "stylelint-use-nesting": "6.0.0",
     "stylelint-value-no-exposed-custom-properties": "^2.3.1",
-    "vite": "5.4.2",
+    "vite": "5.4.3",
     "vitest": "2.0.5"
   }
 }
