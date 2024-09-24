@@ -18,7 +18,7 @@
     "@html-eslint/eslint-plugin": "^0.27.0",
     "@html-eslint/parser": "^0.27.0",
     "@isnotdefined/stylelint-plugin": "^5.0.0",
-    "eslint": "9.10.0",
+    "eslint": "9.11.1",
     "eslint-config-async": "^3.0.0",
     "eslint-plugin-import": "^2.30.0",
     "eslint-plugin-promise": "^7.1.0",
@@ -36,7 +36,7 @@
     "stylelint-selector-tag-no-without-class": "^3.0.1",
     "stylelint-use-nesting": "6.0.0",
     "stylelint-value-no-exposed-custom-properties": "^2.3.1",
-    "vite": "5.4.5",
+    "vite": "5.4.7",
     "vitest": "2.1.1"
   }
 }
