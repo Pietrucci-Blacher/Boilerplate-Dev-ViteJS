@@ -37,6 +37,6 @@
     "stylelint-use-nesting": "6.0.0",
     "stylelint-value-no-exposed-custom-properties": "^2.3.1",
     "vite": "5.4.11",
-    "vitest": "2.1.4"
+    "vitest": "2.1.5"
   }
 }
