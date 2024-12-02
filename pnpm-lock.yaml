@@ -12,11 +12,11 @@ importers:
         specifier: ^9.16.0
         version: 9.16.0
       '@html-eslint/eslint-plugin':
-        specifier: ^0.27.0
-        version: 0.27.0
+        specifier: ^0.29.0
+        version: 0.29.0
       '@html-eslint/parser':
-        specifier: ^0.27.0
-        version: 0.27.0
+        specifier: ^0.29.0
+        version: 0.29.0
       '@isnotdefined/stylelint-plugin':
         specifier: ^5.0.0
         version: 5.0.0(stylelint@16.11.0(typescript@5.6.3))
@@ -75,8 +75,8 @@ importers:
         specifier: ^2.3.1
         version: 2.3.1(stylelint@16.11.0(typescript@5.6.3))
       vite:
-        specifier: 6.0.1
-        version: 6.0.1
+        specifier: 6.0.2
+        version: 6.0.2
       vitest:
         specifier: 2.1.6
         version: 2.1.6
@@ -299,13 +299,17 @@ packages:
     resolution: {integrity: sha512-2b/g5hRmpbb1o4GnTZax9N9m0FXzz9OV42ZzI4rDDMDuHUqigAiQCEWChBWCY4ztAGVRjoWT19v0yMmc5/L5kA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@html-eslint/eslint-plugin@0.27.0':
-    resolution: {integrity: sha512-aAF14sgDKidMCCQpJ4kIhe+fwyAaAbvDlgVTIgd99F+HOWxokTTXDt39a3gewMBo76IeEHDaoizUDJQ/Vc7Mdg==}
+  '@html-eslint/eslint-plugin@0.29.0':
+    resolution: {integrity: sha512-d6xRZVf4cq4cbM6dUy3ZKcHAvwJS84A+USFyNEEP+Sfp4dYA94v57mlFvnfeRxKU3myYd8xOE8aHp2M3ZCMVGw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
-  '@html-eslint/parser@0.27.0':
-    resolution: {integrity: sha512-F/A1M0jnDAYoRvJiiSC7pIBD9DAsf4EhbndbvEi81aozD/wI8WWXON50xZPUaGHCI1C+2syTVifxDz8MvDKaQA==}
+  '@html-eslint/parser@0.29.0':
+    resolution: {integrity: sha512-q94G2CvlcevYwz8wWCni9iAyxk2JMWDJdzleZwBwAasW9fkowi/tRH6ineiph67oseUbj32ksRlW+LEmwfei3A==}
     engines: {node: '>=8.10.0'}
+
+  '@html-eslint/template-parser@0.29.0':
+    resolution: {integrity: sha512-dBFN8kR9KDrzZJya6USttzciJPnjM4bZysXzpLPLKV/WWum40kcauFdYnzCB18y7KN9MMIZHdg5TSZ5ZaJbw1A==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -798,8 +802,8 @@ packages:
     resolution: {integrity: sha512-Zf5H2Kxt2xjTvbJvP2ZWLEICxA6j+hAmMzIlypy4xcBg1vKVnx89Wy0GbS+kf5cwCVFFzdCFh2XSCFNULS6csw==}
     engines: {node: '>= 0.4'}
 
-  es-html-parser@0.0.9:
-    resolution: {integrity: sha512-oniQMi+466VFsDzcdron9Ry/sqUJpDJg1bbDn0jFJKDdxXhwIOYDr4DgBnO5/yPLGj2xv+n5yy4L1Q0vAC5TYQ==}
+  es-html-parser@1.0.0-alpha.4:
+    resolution: {integrity: sha512-5KUgd64goEPG1ZwP3rf/D+uAbdjyuNon0YY9u1yzR2NkFwa1UwxpsCQkzalAOlQaXAVtP32LGYRW4IAKAwo/sg==}
 
   es-module-lexer@1.5.4:
     resolution: {integrity: sha512-MVNK56NiMrOwitFB7cqDwq0CQutbw+0BvLshJSse0MUNU+y1FC3bUS/AQg7oUng+/wKrrki7JfmwtVHkVfPLlw==}
@@ -1874,8 +1878,8 @@ packages:
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
 
-  vite@6.0.1:
-    resolution: {integrity: sha512-Ldn6gorLGr4mCdFnmeAOLweJxZ34HjKnDm4HGo6P66IEqTxQb36VEdFJQENKxWjupNfoIjvRUnswjn1hpYEpjQ==}
+  vite@6.0.2:
+    resolution: {integrity: sha512-XdQ+VsY2tJpBsKGs0wf3U/+azx8BBpYRHFAyKm5VeEZNOJZRB63q7Sc8Iup3k0TrN3KO6QgyzFf+opSbfY1y0g==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
     peerDependencies:
@@ -2116,11 +2120,17 @@ snapshots:
     dependencies:
       levn: 0.4.1
 
-  '@html-eslint/eslint-plugin@0.27.0': {}
-
-  '@html-eslint/parser@0.27.0':
+  '@html-eslint/eslint-plugin@0.29.0':
     dependencies:
-      es-html-parser: 0.0.9
+      '@html-eslint/template-parser': 0.29.0
+
+  '@html-eslint/parser@0.29.0':
+    dependencies:
+      es-html-parser: 1.0.0-alpha.4
+
+  '@html-eslint/template-parser@0.29.0':
+    dependencies:
+      es-html-parser: 1.0.0-alpha.4
 
   '@humanfs/core@0.19.1': {}
 
@@ -2301,13 +2311,13 @@ snapshots:
       chai: 5.1.2
       tinyrainbow: 1.2.0
 
-  '@vitest/mocker@2.1.6(vite@6.0.1)':
+  '@vitest/mocker@2.1.6(vite@6.0.2)':
     dependencies:
       '@vitest/spy': 2.1.6
       estree-walker: 3.0.3
       magic-string: 0.30.12
     optionalDependencies:
-      vite: 6.0.1
+      vite: 6.0.2
 
   '@vitest/pretty-format@2.1.6':
     dependencies:
@@ -2659,7 +2669,7 @@ snapshots:
 
   es-errors@1.3.0: {}
 
-  es-html-parser@0.0.9: {}
+  es-html-parser@1.0.0-alpha.4: {}
 
   es-module-lexer@1.5.4: {}
 
@@ -3816,7 +3826,7 @@ snapshots:
       debug: 4.3.7
       es-module-lexer: 1.5.4
       pathe: 1.1.2
-      vite: 6.0.1
+      vite: 6.0.2
     transitivePeerDependencies:
       - '@types/node'
       - jiti
@@ -3831,7 +3841,7 @@ snapshots:
       - tsx
       - yaml
 
-  vite@6.0.1:
+  vite@6.0.2:
     dependencies:
       esbuild: 0.24.0
       postcss: 8.4.49
@@ -3842,7 +3852,7 @@ snapshots:
   vitest@2.1.6:
     dependencies:
       '@vitest/expect': 2.1.6
-      '@vitest/mocker': 2.1.6(vite@6.0.1)
+      '@vitest/mocker': 2.1.6(vite@6.0.2)
       '@vitest/pretty-format': 2.1.6
       '@vitest/runner': 2.1.6
       '@vitest/snapshot': 2.1.6
@@ -3858,7 +3868,7 @@ snapshots:
       tinyexec: 0.3.1
       tinypool: 1.0.1
       tinyrainbow: 1.2.0
-      vite: 6.0.1
+      vite: 6.0.2
       vite-node: 2.1.6
       why-is-node-running: 2.3.0
     transitivePeerDependencies:
