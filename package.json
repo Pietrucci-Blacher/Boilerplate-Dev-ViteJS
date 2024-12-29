@@ -8,23 +8,23 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "pnpx eslint \"./sources/**/*.js\"",
-    "lint:style": "pnpx stylelint \"./sources/src/**/*.css\"",
+    "lint": "bunx eslint \"./sources/**/*.js\"",
+    "lint:style": "bunx stylelint \"./sources/src/**/*.css\"",
     "preview": "vite preview",
     "test": "vitest"
   },
   "devDependencies": {
-    "@eslint/js": "^9.16.0",
-    "@html-eslint/eslint-plugin": "^0.31.0",
+    "@eslint/js": "^9.17.0",
+    "@html-eslint/eslint-plugin": "^0.31.1",
     "@html-eslint/parser": "^0.31.0",
     "@isnotdefined/stylelint-plugin": "^5.0.0",
     "eslint": "9.17.0",
     "eslint-config-async": "^3.0.0",
-    "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-security": "^3.0.1",
     "eslint-plugin-unicorn": "^56.0.1",
-    "globals": "^15.12.0",
+    "globals": "^15.14.0",
     "prettier": "3.4.2",
     "stylelint": "16.12.0",
     "stylelint-config-standard": "^36.0.1",
@@ -37,6 +37,6 @@
     "stylelint-use-nesting": "6.0.0",
     "stylelint-value-no-exposed-custom-properties": "^2.3.1",
     "vite": "6.0.6",
-    "vitest": "2.1.6"
+    "vitest": "2.1.8"
   }
 }
