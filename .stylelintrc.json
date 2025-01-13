@@ -14,8 +14,11 @@
   "defaultSeverity": "error",
   "rules": {
     "declaration-property-value-no-unknown": true,
-    "at-rule-empty-line-before" : null,
-    "at-rule-no-unknown": null,
+    "at-rule-no-deprecated": true,
+    "at-rule-descriptor-no-unknown": true,
+    "at-rule-descriptor-value-no-unknown": true,
+    "at-rule-empty-line-before" : "always",
+    "at-rule-no-unknown": true,
     "plugin/value-no-exposed-custom-properties": true,
     "csstools/use-nesting": "always",
     "plugin/stylelint-selector-no-empty": true,
