@@ -26,7 +26,7 @@
     "eslint-plugin-unicorn": "^56.0.1",
     "globals": "^15.14.0",
     "prettier": "3.4.2",
-    "stylelint": "16.13.0",
+    "stylelint": "16.13.2",
     "stylelint-config-standard": "^37.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.8.0",
     "stylelint-declaration-strict-value": "^1.10.7",
@@ -37,6 +37,6 @@
     "stylelint-use-nesting": "6.0.0",
     "stylelint-value-no-exposed-custom-properties": "^2.3.1",
     "vite": "6.0.7",
-    "vitest": "2.1.8"
+    "vitest": "3.0.0"
   }
 }
