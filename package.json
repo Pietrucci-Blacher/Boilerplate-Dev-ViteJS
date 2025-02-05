@@ -15,8 +15,8 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.18.0",
-    "@html-eslint/eslint-plugin": "^0.33.0",
-    "@html-eslint/parser": "^0.33.0",
+    "@html-eslint/eslint-plugin": "^0.34.0",
+    "@html-eslint/parser": "^0.34.0",
     "@isnotdefined/stylelint-plugin": "^5.0.0",
     "eslint": "9.19.0",
     "eslint-config-async": "^3.0.0",
@@ -36,7 +36,7 @@
     "stylelint-selector-tag-no-without-class": "^3.0.1",
     "stylelint-use-nesting": "6.0.0",
     "stylelint-value-no-exposed-custom-properties": "^2.3.1",
-    "vite": "6.0.11",
+    "vite": "6.1.0",
     "vitest": "3.0.5"
   }
 }
