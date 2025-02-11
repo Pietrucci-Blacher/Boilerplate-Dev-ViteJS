@@ -18,7 +18,7 @@
     "@html-eslint/eslint-plugin": "^0.34.0",
     "@html-eslint/parser": "^0.34.0",
     "@isnotdefined/stylelint-plugin": "^6.0.0",
-    "eslint": "9.20.0",
+    "eslint": "9.20.1",
     "eslint-config-async": "^3.0.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-promise": "^7.2.1",
