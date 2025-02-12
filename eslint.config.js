@@ -29,10 +29,14 @@ export default [
       ...eslintPluginPromise.configs.recommended.rules,
 
       // Style et formatage pour une meilleure lisibilité
-      'indent': ['error', 2, { 'SwitchCase': 1 }],
-      'quotes': ['error', 'single', { 'avoidEscape': true, 'allowTemplateLiterals': true }],
-      'semi': ['error', 'always'],
-      'no-multiple-empty-lines': ['error', { 'max': 1, 'maxEOF': 0 }],
+      indent: ['error', 2, { SwitchCase: 1 }],
+      quotes: [
+        'error',
+        'single',
+        { avoidEscape: true, allowTemplateLiterals: true },
+      ],
+      semi: ['error', 'always'],
+      'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 0 }],
       'object-curly-spacing': ['error', 'always'],
       'array-bracket-spacing': ['error', 'never'],
       'comma-dangle': ['error', 'always-multiline'],
@@ -40,7 +44,7 @@ export default [
 
       // ES6+ et fonctionnalités modernes
       'prefer-const': 'error',
-      'prefer-destructuring': ['error', { 'object': true, 'array': false }],
+      'prefer-destructuring': ['error', { object: true, array: false }],
       'prefer-template': 'error',
       'prefer-rest-params': 'error',
       'prefer-spread': 'error',
@@ -55,8 +59,14 @@ export default [
       'no-return-await': 'error',
       'require-await': 'error',
       'no-unused-expressions': 'error',
-      'no-unused-vars': ['error', { 'argsIgnorePattern': '^_', 'varsIgnorePattern': '^_' }],
-      'no-use-before-define': ['error', { 'functions': false, 'classes': true, 'variables': true }],
+      'no-unused-vars': [
+        'error',
+        { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
+      ],
+      'no-use-before-define': [
+        'error',
+        { functions: false, classes: true, variables: true },
+      ],
 
       // Performance
       'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
@@ -87,10 +97,17 @@ export default [
       'import/order': [
         'error',
         {
-          'groups': ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
+          groups: [
+            'builtin',
+            'external',
+            'internal',
+            'parent',
+            'sibling',
+            'index',
+          ],
           'newlines-between': 'always',
-          'alphabetize': { 'order': 'asc', 'caseInsensitive': true }
-        }
+          alphabetize: { order: 'asc', caseInsensitive: true },
+        },
       ],
       'import/no-cycle': 'error',
       'import/no-duplicates': 'error',
@@ -103,9 +120,12 @@ export default [
       'promise/no-nesting': 'warn',
 
       // Complexité et maintenabilité
-      'complexity': ['warn', 12],
+      complexity: ['warn', 12],
       'max-depth': ['warn', 3],
-      'max-lines-per-function': ['warn', { 'max': 50, 'skipBlankLines': true, 'skipComments': true }],
+      'max-lines-per-function': [
+        'warn',
+        { max: 50, skipBlankLines: true, skipComments: true },
+      ],
       'max-params': ['warn', 3],
     },
   },

@@ -7,18 +7,19 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build:vite": "vite build",
     "lint": "bunx eslint \"./sources/**/*.js\"",
     "lint:style": "bunx stylelint \"./sources/src/**/*.css\"",
     "preview": "vite preview",
+    "format": "bunx prettier --write \"./**/*.{html,css,js}\"",
     "test": "vitest"
   },
   "devDependencies": {
-    "@eslint/js": "^9.18.0",
+    "@eslint/js": "^9.20.0",
     "@html-eslint/eslint-plugin": "^0.34.0",
     "@html-eslint/parser": "^0.34.0",
     "@isnotdefined/stylelint-plugin": "^6.0.0",
-    "eslint": "9.20.0",
+    "eslint": "9.20.1",
     "eslint-config-async": "^3.0.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-promise": "^7.2.1",
