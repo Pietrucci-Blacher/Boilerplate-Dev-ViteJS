@@ -1,5 +1,6 @@
 # Misc
 .idea/*
+sources/dist
 
 #Node
 .node_repl_history
