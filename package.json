@@ -16,18 +16,18 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.20.0",
-    "@html-eslint/eslint-plugin": "^0.39.0",
-    "@html-eslint/parser": "^0.39.0",
+    "@html-eslint/eslint-plugin": "^0.40.0",
+    "@html-eslint/parser": "^0.40.0",
     "@isnotdefined/stylelint-plugin": "^6.0.0",
-    "eslint": "9.25.1",
+    "eslint": "9.27.0",
     "eslint-config-async": "^3.0.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-security": "^3.0.1",
-    "eslint-plugin-unicorn": "^58.0.0",
+    "eslint-plugin-unicorn": "^59.0.0",
     "globals": "^16.0.0",
     "prettier": "3.5.3",
-    "stylelint": "16.19.0",
+    "stylelint": "16.19.1",
     "stylelint-config-standard": "^38.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.8.0",
     "stylelint-declaration-strict-value": "^1.10.7",
@@ -37,7 +37,7 @@
     "stylelint-selector-tag-no-without-class": "^3.0.1",
     "stylelint-use-nesting": "6.0.0",
     "stylelint-value-no-exposed-custom-properties": "^2.3.1",
-    "vite": "6.3.4",
-    "vitest": "3.1.2"
+    "vite": "6.3.5",
+    "vitest": "3.1.4"
   }
 }
